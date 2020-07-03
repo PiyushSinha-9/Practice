@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+<!-- Notes Verification Process -->
+	<string name="Notes_Saved_NoWifi"> Random Characters added for Testing </string>
+</resources>

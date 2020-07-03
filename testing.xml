@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" >			// change parallel value to tests
+
+	<!--<listeners>
+	<listener class-name="com.qa.listeners.TestListener" />
+	</listeners>-->
+
+	<test name="iPhone6Real">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="platformName" value="iOS" />
+		<parameter name="udid" value="8002e513b609914046f344f8cea0044663c33950" />
+		<parameter name="deviceName" value="iPhone" />
+		<parameter name="platformVersion" value="13.4.1" />
+				
+<!--		<parameter name="wdaLocalPort" value="10001" />
+		<parameter name="webkitDebugProxyPort" value="11001" />-->
+		<classes>
+		
+			<!--<class name="com.qa.tests.LoginTests"></class>
+			<methods>
+			<include name= "test1" />
+			</methods>
+			-->
+			<class name="com.qa.tests.Scenario1"></class>
+			<methods>
+			<include name= "test2" />
+			</methods>
+			<!--<class name="com.qa.tests.ProductTests"></class>-->
+		</classes>
+	</test>
+	
+	<!-- For Running Parallel Device  change parallel Attributes to tests-->
+	<!--<test name="Pixel_2">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="true" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="udid" value="replace_with_device_udid" />
+		<parameter name="deviceName" value="Pixel_2" />
+		<parameter name="systemPort" value="10000" />
+		<parameter name="chromeDriverPort" value="11000" />
+		<classes>
+			<class name="com.qa.tests.LoginTests"></class>
+			<class name="com.qa.tests.ProductTests"></class>
+		</classes>
+	</test>-->
+	
+	
+</suite> <!-- Suite -->

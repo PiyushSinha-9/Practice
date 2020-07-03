@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="iPhone6Real(failed)">
+    <parameter name="platformVersion" value="13.4.1"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="udid" value="8002e513b609914046f344f8cea0044663c33950"/>
+    <parameter name="deviceName" value="iPhone"/>
+    <classes>
+      <class name="com.qa.tests.Scenario1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="test2"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.qa.tests.Scenario1 -->
+    </classes>
+  </test> <!-- iPhone6Real(failed) -->
+</suite> <!-- Failed suite [Suite] -->
